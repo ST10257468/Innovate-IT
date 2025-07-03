@@ -1,0 +1,39 @@
+﻿<div class="text-center">
+    <button class="section-title">ABOUT US</button>
+</div>
+
+<div class="carousel">
+    <button class="arrow-button" onclick="prevSlide()">&#x276E;</button>
+
+    <div class="carousel-box">
+        <h2 id="about-text">The First Temple</h2>
+    </div>
+
+    <button class="arrow-button" onclick="nextSlide()">&#x276F;</button>
+</div>
+
+@section Scripts {
+    <script>
+        const aboutSections = [
+            "The First Temple",
+            "Our Mission and Vision",
+            "Community Involvement",
+            "Future Plans"
+        ];
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            document.getElementById("about-text").textContent = aboutSections[index];
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % aboutSections.length;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + aboutSections.length) % aboutSections.length;
+            showSlide(currentIndex);
+        }
+    </script>
+}

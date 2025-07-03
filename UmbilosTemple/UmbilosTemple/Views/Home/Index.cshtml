@@ -1,0 +1,66 @@
+﻿<div class="text-center">
+    <button class="section-title">WELCOME</button>
+</div>
+
+<div class="carousel">
+    <button class="arrow-button" onclick="prevWelcomeSlide()">&#x276E;</button>
+
+    <div class="carousel-box">
+        <h2 id="welcome-text">Welcome to Umbilo’s Temple</h2>
+        <p id="welcome-subtext">Donate Today</p>
+        <a id="donate-button" class="donate-button btn btn-primary" href="/Donations">DONATE</a>
+    </div>
+
+    <button class="arrow-button" onclick="nextWelcomeSlide()">&#x276F;</button>
+</div>
+
+@section Scripts {
+    <script>
+        const welcomeSlides = [
+            {
+                title: "Welcome to Umbilo’s Temple",
+                subtitle: "Donate Today"
+            },
+            {
+                title: "Support Spiritual Growth",
+                subtitle: "Your contribution helps us grow"
+            },
+            {
+                title: "Be a Part of Our Journey",
+                subtitle: "Every donation counts"
+            }
+        ];
+        let welcomeIndex = 0;
+
+        function showWelcomeSlide(index) {
+            const title = document.getElementById("welcome-text");
+            const subtitle = document.getElementById("welcome-subtext");
+            const donateButton = document.getElementById("donate-button");
+
+            const slide = welcomeSlides[index];
+            title.textContent = slide.title;
+            subtitle.textContent = slide.subtitle;
+
+            // Show donate button only on the first slide
+            if (index === 0) {
+                donateButton.style.display = "inline-block";
+            } else {
+                donateButton.style.display = "none";
+            }
+        }
+
+        function nextWelcomeSlide() {
+            welcomeIndex = (welcomeIndex + 1) % welcomeSlides.length;
+            showWelcomeSlide(welcomeIndex);
+        }
+
+        function prevWelcomeSlide() {
+            welcomeIndex = (welcomeIndex - 1 + welcomeSlides.length) % welcomeSlides.length;
+            showWelcomeSlide(welcomeIndex);
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            showWelcomeSlide(welcomeIndex);
+        });
+    </script>
+}

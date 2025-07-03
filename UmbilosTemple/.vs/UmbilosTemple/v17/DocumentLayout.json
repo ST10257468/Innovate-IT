@@ -1,0 +1,187 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1522D5AD-CC9C-4C66-B84B-EB8F1FC7FD85}|UmbilosTemple\\UmbilosTemple.csproj|c:\\users\\kpada\\source\\repos\\umbilostemple\\umbilostemple\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1522D5AD-CC9C-4C66-B84B-EB8F1FC7FD85}|UmbilosTemple\\UmbilosTemple.csproj|solutionrelative:umbilostemple\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1522D5AD-CC9C-4C66-B84B-EB8F1FC7FD85}|UmbilosTemple\\UmbilosTemple.csproj|c:\\users\\kpada\\source\\repos\\umbilostemple\\umbilostemple\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1522D5AD-CC9C-4C66-B84B-EB8F1FC7FD85}|UmbilosTemple\\UmbilosTemple.csproj|solutionrelative:umbilostemple\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1522D5AD-CC9C-4C66-B84B-EB8F1FC7FD85}|UmbilosTemple\\UmbilosTemple.csproj|c:\\users\\kpada\\source\\repos\\umbilostemple\\umbilostemple\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1522D5AD-CC9C-4C66-B84B-EB8F1FC7FD85}|UmbilosTemple\\UmbilosTemple.csproj|solutionrelative:umbilostemple\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1522D5AD-CC9C-4C66-B84B-EB8F1FC7FD85}|UmbilosTemple\\UmbilosTemple.csproj|c:\\users\\kpada\\source\\repos\\umbilostemple\\umbilostemple\\views\\donations\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1522D5AD-CC9C-4C66-B84B-EB8F1FC7FD85}|UmbilosTemple\\UmbilosTemple.csproj|solutionrelative:umbilostemple\\views\\donations\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1522D5AD-CC9C-4C66-B84B-EB8F1FC7FD85}|UmbilosTemple\\UmbilosTemple.csproj|c:\\users\\kpada\\source\\repos\\umbilostemple\\umbilostemple\\controllers\\donationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1522D5AD-CC9C-4C66-B84B-EB8F1FC7FD85}|UmbilosTemple\\UmbilosTemple.csproj|solutionrelative:umbilostemple\\controllers\\donationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1522D5AD-CC9C-4C66-B84B-EB8F1FC7FD85}|UmbilosTemple\\UmbilosTemple.csproj|c:\\users\\kpada\\source\\repos\\umbilostemple\\umbilostemple\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1522D5AD-CC9C-4C66-B84B-EB8F1FC7FD85}|UmbilosTemple\\UmbilosTemple.csproj|solutionrelative:umbilostemple\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1522D5AD-CC9C-4C66-B84B-EB8F1FC7FD85}|UmbilosTemple\\UmbilosTemple.csproj|c:\\users\\kpada\\source\\repos\\umbilostemple\\umbilostemple\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1522D5AD-CC9C-4C66-B84B-EB8F1FC7FD85}|UmbilosTemple\\UmbilosTemple.csproj|solutionrelative:umbilostemple\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1522D5AD-CC9C-4C66-B84B-EB8F1FC7FD85}|UmbilosTemple\\UmbilosTemple.csproj|c:\\users\\kpada\\source\\repos\\umbilostemple\\umbilostemple\\views\\events\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1522D5AD-CC9C-4C66-B84B-EB8F1FC7FD85}|UmbilosTemple\\UmbilosTemple.csproj|solutionrelative:umbilostemple\\views\\events\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1522D5AD-CC9C-4C66-B84B-EB8F1FC7FD85}|UmbilosTemple\\UmbilosTemple.csproj|c:\\users\\kpada\\source\\repos\\umbilostemple\\umbilostemple\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1522D5AD-CC9C-4C66-B84B-EB8F1FC7FD85}|UmbilosTemple\\UmbilosTemple.csproj|solutionrelative:umbilostemple\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\Views\\Donations\\Index.cshtml",
+              "RelativeDocumentMoniker": "UmbilosTemple\\Views\\Donations\\Index.cshtml",
+              "ToolTip": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\Views\\Donations\\Index.cshtml",
+              "RelativeToolTip": "UmbilosTemple\\Views\\Donations\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-03T17:44:47.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DonationsController.cs",
+              "DocumentMoniker": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\Controllers\\DonationsController.cs",
+              "RelativeDocumentMoniker": "UmbilosTemple\\Controllers\\DonationsController.cs",
+              "ToolTip": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\Controllers\\DonationsController.cs",
+              "RelativeToolTip": "UmbilosTemple\\Controllers\\DonationsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T17:43:53.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\Views\\About\\Index.cshtml",
+              "RelativeDocumentMoniker": "UmbilosTemple\\Views\\About\\Index.cshtml",
+              "ToolTip": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\Views\\About\\Index.cshtml",
+              "RelativeToolTip": "UmbilosTemple\\Views\\About\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAiwCYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-03T17:31:34.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AboutController.cs",
+              "DocumentMoniker": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\Controllers\\AboutController.cs",
+              "RelativeDocumentMoniker": "UmbilosTemple\\Controllers\\AboutController.cs",
+              "ToolTip": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\Controllers\\AboutController.cs",
+              "RelativeToolTip": "UmbilosTemple\\Controllers\\AboutController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T17:31:09.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EventsController.cs",
+              "DocumentMoniker": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\Controllers\\EventsController.cs",
+              "RelativeDocumentMoniker": "UmbilosTemple\\Controllers\\EventsController.cs",
+              "ToolTip": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\Controllers\\EventsController.cs",
+              "RelativeToolTip": "UmbilosTemple\\Controllers\\EventsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T17:24:37.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\Views\\Events\\Index.cshtml",
+              "RelativeDocumentMoniker": "UmbilosTemple\\Views\\Events\\Index.cshtml",
+              "ToolTip": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\Views\\Events\\Index.cshtml",
+              "RelativeToolTip": "UmbilosTemple\\Views\\Events\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAiwBwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-03T17:16:07.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "UmbilosTemple\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "UmbilosTemple\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAiwAoAAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-03T17:12:18.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "UmbilosTemple\\wwwroot\\css\\style.css",
+              "ToolTip": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "UmbilosTemple\\wwwroot\\css\\style.css",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-03T17:05:52.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "UmbilosTemple\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "UmbilosTemple\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABEAAAAAAAAAAAAiwCEAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-03T16:52:26.848Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
