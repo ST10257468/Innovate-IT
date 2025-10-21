@@ -4,25 +4,28 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - UmbilosTemple</title>
+
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/UmbilosTemple.styles.css" asp-append-version="true" />
-
     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+
+ 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav class="custom-navbar">
             <div class="navbar-logo">
-                <img src="~/images/logo.png" alt="Temple Logo" />
+                <img src="~/images/logo.jpg" alt="Temple Logo" />
             </div>
 
             <ul class="navbar-links">
                 <li>
                     <a asp-controller="Home" asp-action="Index">
                         <div class="icon-box">
-                            <img src="~/images/icons/Book.png" alt="Home" />
+                            <i class="fas fa-book"></i>
                             <span>Home</span>
                         </div>
                     </a>
@@ -30,7 +33,7 @@
                 <li>
                     <a asp-controller="About" asp-action="Index">
                         <div class="icon-box">
-                            <img src="~/images/icons/Scroll.png" alt="About" />
+                            <i class="fas fa-scroll"></i>
                             <span>About</span>
                         </div>
                     </a>
@@ -38,7 +41,7 @@
                 <li>
                     <a asp-controller="Events" asp-action="Index">
                         <div class="icon-box">
-                            <img src="~/images/icons/Events.png" alt="Events" />
+                            <i class="fas fa-calendar-alt"></i>
                             <span>Events</span>
                         </div>
                     </a>
@@ -46,7 +49,7 @@
                 <li>
                     <a asp-controller="Donations" asp-action="Index">
                         <div class="icon-box">
-                            <img src="~/images/icons/Donation.png" alt="Donate" />
+                            <i class="fas fa-hand-holding-usd"></i>
                             <span>Donate</span>
                         </div>
                     </a>
@@ -54,7 +57,7 @@
             </ul>
         </nav>
     </header>
-                  
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -62,10 +65,12 @@
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
+       @*  <div class="container">
             &copy; 2025 - UmbilosTemple - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+        </div> *@
     </footer>
+
+    <!-- Scripts -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

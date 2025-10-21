@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bM9GTZaZNnzcSA6ZalwZ0V84haOfACHTSAW9dShL4Gg=",
+  "Hash": "wiC21x1gmZeR5Of+J/XZZIfkQp0DoOWwE8Rsl5Jnm2U=",
   "Source": "UmbilosTemple",
   "BasePath": "_content/UmbilosTemple",
   "Mode": "Default",
@@ -112,6 +112,25 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\wwwroot\\Images\\ChatGPT Image Oct 21, 2025, 09_37_05 AM.png",
+      "SourceId": "UmbilosTemple",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\wwwroot\\",
+      "BasePath": "_content/UmbilosTemple",
+      "RelativePath": "Images/ChatGPT Image Oct 21, 2025, 09_37_05 AM.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\ChatGPT Image Oct 21, 2025, 09_37_05 AM.png"
+    },
+    {
       "Identity": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\wwwroot\\Images\\icons\\Book.png",
       "SourceId": "UmbilosTemple",
       "SourceType": "Discovered",
@@ -186,6 +205,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\icons\\Scroll.png"
+    },
+    {
+      "Identity": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\wwwroot\\Images\\logo.jpg",
+      "SourceId": "UmbilosTemple",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\wwwroot\\",
+      "BasePath": "_content/UmbilosTemple",
+      "RelativePath": "Images/logo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\logo.jpg"
     },
     {
       "Identity": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\wwwroot\\Images\\LOGO.png",

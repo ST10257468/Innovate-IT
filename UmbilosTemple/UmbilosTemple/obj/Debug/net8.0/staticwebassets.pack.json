@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\UmbilosTemple.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\wwwroot\\Images\\ChatGPT Image Oct 21, 2025, 09_37_05 AM.png",
+      "PackagePath": "staticwebassets\\Images\\ChatGPT Image Oct 21, 2025, 09_37_05 AM.png"
+    },
+    {
       "Id": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\wwwroot\\Images\\LOGO.png",
       "PackagePath": "staticwebassets\\Images\\LOGO.png"
     },
@@ -23,6 +27,10 @@
     {
       "Id": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\wwwroot\\Images\\icons\\Scroll.png",
       "PackagePath": "staticwebassets\\Images\\icons\\Scroll.png"
+    },
+    {
+      "Id": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\wwwroot\\Images\\logo.jpg",
+      "PackagePath": "staticwebassets\\Images\\logo.jpg"
     },
     {
       "Id": "C:\\Users\\kpada\\source\\repos\\UmbilosTemple\\UmbilosTemple\\wwwroot\\css\\site.css",

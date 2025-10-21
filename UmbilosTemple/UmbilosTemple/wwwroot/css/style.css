@@ -2,27 +2,46 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #0099cc, #33cc33);
+    background-color: #1B5E20; /* Deep green background */
     color: #333;
 }
 
-/* Top navigation */
-.navbar {
-    background-color: #7d5fff !important;
-    padding: 1rem;
+/* Elegant gold navbar */
+.custom-navbar {
+    position: relative;
+    background: linear-gradient(135deg, #FFD700, #FFEC8B, #FFC107); /* rich, elegant gold */
+    padding: 0.5rem 1rem;
+    border-bottom: 3px solid #E6BE00; /* slightly darker gold */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 6px; /* subtle elegance */
+    display: flex;
+    align-items: center;
 }
 
-.navbar-brand, .navbar-nav .nav-link {
-    color: white !important;
-    font-weight: bold;
-    font-size: 18px;
+.navbar-logo img {
+    height: 60px;
 }
 
-.navbar-nav {
+.navbar-links {
+    list-style: none;
+    display: flex;
     gap: 20px;
+    margin-left: 30px;
+    padding: 0;
 }
 
+    .navbar-links li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        transition: color 0.2s ease;
+    }
 
+        .navbar-links li a:hover {
+            color: #333333;
+        }
+
+/* Section titles */
 .section-title {
     background: linear-gradient(to right, orange, #ffcc00);
     border: none;
@@ -35,7 +54,7 @@ body {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
 }
 
-
+/* Carousel */
 .carousel {
     display: flex;
     align-items: center;
@@ -43,7 +62,6 @@ body {
     margin-top: 40px;
     gap: 20px;
 }
-
 
 .carousel-box {
     background-color: #ffcc5c;
@@ -88,7 +106,7 @@ body {
         box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
     }
 
-/* Donation  */
+/* Donation form */
 .donation-form-container {
     display: flex;
     justify-content: center;
@@ -131,33 +149,10 @@ body {
     display: flex;
     justify-content: flex-end;
 }
-.custom-navbar {
-    display: flex;
-    align-items: center;
-    background-color: #6a5cff;
-    padding: 0.5rem 1rem;
-}
 
-.navbar-logo img {
-    height: 60px;
-    border-radius: 5px;
-}
-
-.navbar-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin-left: 30px;
-    padding: 0;
-}
-
-    .navbar-links li a {
-        text-decoration: none;
-        color: black;
-    }
-
+/* Icon boxes with elegant gold */
 .icon-box {
-    background-color: #d4ffbb;
+    background-color: #FFD966; /* soft gold */
     padding: 10px;
     border-radius: 12px;
     display: flex;
@@ -165,22 +160,99 @@ body {
     align-items: center;
     width: 80px;
     height: 80px;
-    transition: transform 0.2s;
+    transition: transform 0.2s, background-color 0.2s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-    .icon-box img {
+    .icon-box img,
+    .icon-box i {
         width: 30px;
         height: 30px;
         margin-bottom: 6px;
+        color: #B8860B; /* dark gold/brown for icons */
     }
 
     .icon-box span {
         font-weight: bold;
         font-size: 14px;
+        color: #4B3B00; /* elegant dark gold text */
     }
 
     .icon-box:hover {
         transform: scale(1.05);
-        background-color: #c4f0a5;
+        background-color: #FFE08C; /* lighter gold on hover */
     }
 
+/* Events Section */
+.events-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Each event card */
+.event-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffcc5c;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    width: 70%;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+    .event-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    }
+
+/* Icon beside event info */
+.event-icon {
+    font-size: 40px;
+    color: black;
+}
+
+/* Event text styles */
+.event-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+    margin: 0;
+}
+
+.event-date {
+    font-size: 16px;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .event-card {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .event-icon {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 15px;
+    }
+}
