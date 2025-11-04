@@ -1,17 +1,30 @@
+using Google.Apis.Auth.OAuth2;
 using Google.Cloud.Firestore;
 using UmbiloTemple.Services;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.WebHost.UseUrls("http://*:8080");
 
-Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS",
-    Path.Combine(builder.Environment.ContentRootPath, "Firestore/temple-firebase-key.json"));
 
-builder.Services.AddSingleton(provider =>
+var firebaseJson = Environment.GetEnvironmentVariable("FIREBASE_KEY_JSON");
+GoogleCredential credential;
+
+if (!string.IsNullOrEmpty(firebaseJson))
 {
-    return FirestoreDb.Create("umbilotemple-f8c8f");
-});
+    
+    credential = GoogleCredential.FromJson(firebaseJson);
+}
+else
+{
+    
+    var localPath = Path.Combine(builder.Environment.ContentRootPath, "Firestore/temple-firebase-key.json");
+    credential = GoogleCredential.FromFile(localPath);
+}
 
+
+var firestoreDb = FirestoreDb.Create("umbilotemple-f8c8f", credential);
+
+
+builder.Services.AddSingleton(firestoreDb);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddSession(options =>
@@ -38,6 +51,7 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseSession();
 app.UseAuthorization();
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
