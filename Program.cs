@@ -2,6 +2,7 @@ using Google.Cloud.Firestore;
 using UmbiloTemple.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.WebHost.UseUrls("http://*:8080");
 
 Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS",
     Path.Combine(builder.Environment.ContentRootPath, "Firestore/temple-firebase-key.json"));
