@@ -1,28 +1,30 @@
 using Google.Apis.Auth.OAuth2;
 using Google.Cloud.Firestore;
+using Google.Cloud.Firestore.V1;
+using Grpc.Auth;
 using UmbiloTemple.Services;
 
 var builder = WebApplication.CreateBuilder(args);
-
 
 var firebaseJson = Environment.GetEnvironmentVariable("FIREBASE_KEY_JSON");
 GoogleCredential credential;
 
 if (!string.IsNullOrEmpty(firebaseJson))
 {
-    
     credential = GoogleCredential.FromJson(firebaseJson);
 }
 else
 {
-    
     var localPath = Path.Combine(builder.Environment.ContentRootPath, "Firestore/temple-firebase-key.json");
     credential = GoogleCredential.FromFile(localPath);
 }
 
-
-var firestoreDb = FirestoreDb.Create("umbilotemple-f8c8f", credential);
-
+var builderFirestore = new FirestoreClientBuilder
+{
+    ChannelCredentials = credential.ToChannelCredentials()
+};
+var firestoreClient = builderFirestore.Build();
+var firestoreDb = FirestoreDb.Create("umbilotemple-f8c8f", firestoreClient);
 
 builder.Services.AddSingleton(firestoreDb);
 builder.Services.AddControllersWithViews();
