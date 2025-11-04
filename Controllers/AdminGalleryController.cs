@@ -15,8 +15,8 @@ namespace UmbiloTemple.Controllers
             _env = env;
         }
 
-        private bool IsAdmin()
-            => HttpContext.Session.GetString("UserRole") == "admin";
+        private bool IsAdmin() =>
+            HttpContext.Session.GetString("UserRole") == "admin";
 
         public async Task<IActionResult> Index()
         {
@@ -39,18 +39,32 @@ namespace UmbiloTemple.Controllers
         {
             if (!IsAdmin()) return RedirectToAction("Login", "Account");
 
-            if (imageFile != null)
-            {
-                var uploadDir = Path.Combine(_env.WebRootPath, "uploads");
+            // 🔹 Create Firestore document reference
+            var docRef = _firestore.Collection("Gallery").Document();
+            model.Id = docRef.Id;
+
+            // 🔹 Ensure uploads folder exists
+            var uploadDir = Path.Combine(_env.WebRootPath, "uploads");
+            if (!Directory.Exists(uploadDir))
                 Directory.CreateDirectory(uploadDir);
 
-                var filePath = Path.Combine(uploadDir, imageFile.FileName);
-                using var stream = new FileStream(filePath, FileMode.Create);
-                await imageFile.CopyToAsync(stream);
-                model.ImageUrl = "/uploads/" + imageFile.FileName;
+            if (imageFile != null)
+            {
+                // 🔹 Generate unique file name
+                var fileName = $"{Guid.NewGuid()}_{Path.GetFileName(imageFile.FileName)}";
+                var filePath = Path.Combine(uploadDir, fileName);
+
+                // 🔹 Save file to server
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                    await imageFile.CopyToAsync(stream);
+
+                model.ImageUrl = "/uploads/" + fileName;
             }
 
-            var docRef = _firestore.Collection("Gallery").Document();
+            // 🔹 Ensure Firestore-safe timestamp
+            model.UploadedAt = DateTime.UtcNow;
+
+            // 🔹 Save to Firestore
             await docRef.SetAsync(model);
 
             TempData["Success"] = "Image uploaded successfully.";

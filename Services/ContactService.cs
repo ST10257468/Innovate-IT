@@ -5,13 +5,13 @@ namespace UmbiloTemple.Services
 {
     public class ContactService
     {
-        private readonly FirestoreDb _db;
-        public ContactService(FirestoreDb db) => _db = db;
+        private readonly FirestoreDb _firestore;
+        public ContactService(FirestoreDb firestore) => _firestore = firestore;
 
-        public async Task SaveMessageAsync(ContactMessage msg)
+        public async Task SaveMessageAsync(ContactMessage message)
         {
-            var docRef = _db.Collection("ContactMessages").Document(msg.Id);
-            await docRef.SetAsync(msg);
+            var docRef = _firestore.Collection("ContactMessages").Document(message.Id);
+            await docRef.SetAsync(message);
         }
     }
 }

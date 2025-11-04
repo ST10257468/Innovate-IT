@@ -15,8 +15,8 @@ namespace UmbiloTemple.Controllers
             _env = env;
         }
 
-        private bool IsAdmin()
-            => HttpContext.Session.GetString("UserRole") == "admin";
+        private bool IsAdmin() =>
+            HttpContext.Session.GetString("UserRole") == "admin";
 
         public async Task<IActionResult> Index()
         {
@@ -39,15 +39,33 @@ namespace UmbiloTemple.Controllers
         {
             if (!IsAdmin()) return RedirectToAction("Login", "Account");
 
+            // Generate Firestore document ID
+            var docRef = _firestore.Collection("Events").Document();
+            model.Id = docRef.Id;
+
+            // Handle image upload
             if (imageFile != null)
             {
-                var path = Path.Combine(_env.WebRootPath, "uploads", imageFile.FileName);
-                using var stream = new FileStream(path, FileMode.Create);
-                await imageFile.CopyToAsync(stream);
-                model.ImagePath = "/uploads/" + imageFile.FileName;
+                var uploadsFolder = Path.Combine(_env.WebRootPath, "uploads");
+                if (!Directory.Exists(uploadsFolder))
+                    Directory.CreateDirectory(uploadsFolder);
+
+                var fileName = $"{Guid.NewGuid()}_{Path.GetFileName(imageFile.FileName)}";
+                var filePath = Path.Combine(uploadsFolder, fileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                    await imageFile.CopyToAsync(stream);
+
+                model.ImageUrl = "/uploads/" + fileName;
             }
 
-            var docRef = _firestore.Collection("Events").Document();
+            // ✅ Ensure all DateTime fields are UTC
+            model.CreatedAt = DateTime.UtcNow;
+
+            if (model.Date.Kind == DateTimeKind.Unspecified || model.Date.Kind == DateTimeKind.Local)
+                model.Date = DateTime.SpecifyKind(model.Date, DateTimeKind.Utc);
+
+            // Save to Firestore
             await docRef.SetAsync(model);
 
             TempData["Success"] = "Event added successfully.";

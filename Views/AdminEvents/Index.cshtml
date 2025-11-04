@@ -32,7 +32,7 @@
                             <td>@e.Title</td>
                             <td>@e.Date.ToString("dd MMM yyyy")</td>
                             <td>@e.Description</td>
-                            <td><img src="@e.ImagePath" width="100" class="rounded shadow-sm" /></td>
+                            <td><img src="@e.ImageUrl" width="100" class="rounded shadow-sm" /></td>
                             <td>
                                 <a href="/AdminEvents/Delete?id=@e.Id" class="btn btn-sm btn-danger"
                                    onclick="return confirm('Are you sure you want to delete this event?')">

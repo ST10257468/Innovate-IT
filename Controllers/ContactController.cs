@@ -19,24 +19,25 @@ namespace UmbiloTemple.Controllers
         public IActionResult Index() => View();
 
         [HttpPost]
-        public async Task<IActionResult> Index(ContactMessage message)
+        public async Task<IActionResult> Index(ContactMessage contactMessage)
         {
             if (!ModelState.IsValid)
             {
                 TempData["Error"] = "Please complete all fields correctly.";
-                return View(message);
+                return View(contactMessage);
             }
 
-            // 1️⃣ Save message to Firestore
-            await _contactService.SaveMessageAsync(message);
+            // Ensure UTC timestamp for Firestore
+            contactMessage.SentAt = DateTime.UtcNow;
 
-            // 2️⃣ Send email notification to admin
-            string subject = $"📩 New Contact Message from {message.Name}";
+            await _contactService.SaveMessageAsync(contactMessage);
+
+            string subject = $"📩 New Contact Message from {contactMessage.Name}";
             string body = $@"
                 <h2>New Contact Message</h2>
-                <p><strong>Name:</strong> {message.Name}</p>
-                <p><strong>Email:</strong> {message.Email}</p>
-                <p><strong>Message:</strong><br/>{message.Message}</p>
+                <p><strong>Name:</strong> {contactMessage.Name}</p>
+                <p><strong>Email:</strong> {contactMessage.Email}</p>
+                <p><strong>Message:</strong><br/>{contactMessage.Message}</p>
                 <p><em>Received on {DateTime.Now:dddd, dd MMM yyyy HH:mm}</em></p>";
 
             await _emailService.SendEmailAsync(subject, body);
@@ -46,3 +47,4 @@ namespace UmbiloTemple.Controllers
         }
     }
 }
+
