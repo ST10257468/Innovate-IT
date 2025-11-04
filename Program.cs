@@ -19,11 +19,11 @@ else
     credential = GoogleCredential.FromFile(localPath);
 }
 
-var builderFirestore = new FirestoreClientBuilder
+var firestoreClient = new FirestoreClientBuilder
 {
     ChannelCredentials = credential.ToChannelCredentials()
-};
-var firestoreClient = builderFirestore.Build();
+}.Build();
+
 var firestoreDb = FirestoreDb.Create("umbilotemple-f8c8f", firestoreClient);
 
 builder.Services.AddSingleton(firestoreDb);
