@@ -49,8 +49,3 @@ jobs:
           arch: x86_64
           script: ./gradlew connectedAndroidTest
 
-
-
-
-
-df522e0ed481e67b69709a83020ab10864e8572c
